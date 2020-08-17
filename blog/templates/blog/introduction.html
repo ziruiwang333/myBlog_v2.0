@@ -82,7 +82,7 @@
 				{% for workExp in work_experience %}
 				<div class="company">{{workExp.company_name}} <span class="workTime">{{workExp.start_date}}-{{workExp.end_date}}</span></div>
 				<div class="jobTitle">{{workExp.job_title}}</div>
-				<div class="jobOneDetail">{{workExp.job_describe}}</div>
+				<div class="jobOneDetail">{{workExp.job_describe|linebreaksbr}}</div>
 				{% endfor %}
 			</div>
 
@@ -91,7 +91,7 @@
 			<div class="introPersonalStatement">
 				<div class="personalStatement">Personal Statement</div>
 					{% for myps in ps %}
-					<div class="statementDeatil">{{myps.ps_describe}}</div>
+					<div class="statementDeatil">{{myps.ps_describe|linebreaksbr}}</div>
 					{% endfor %}
 			</div>
 		</div>
