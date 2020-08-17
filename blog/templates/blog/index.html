@@ -24,14 +24,14 @@
 	<div class="topPost" align='center'>
 		<div class="topView">Top View:</div>
 		<div class="topPostTitle">{{top_post.title}}</div>
-		<div class="topPostContent">{{top_post.text|safe|truncatechars:200|linebreaksbr}}<a href="{% url 'post_detail' pk=top_post.pk %}"><span class="topPostMore">more>></span></a></div>
+		<div class="topPostContent">{{top_post.text|safe|truncatechars:200|linebreaksbr}}<a href="{% url 'post_detail' pk=top_post.pk %}"><span class="topPostMore">Read more>></span></a></div>
 		<div class="topPostDate">{{top_post.published_date}}</div>
 	</div>
 	
 	<div class="mostRecent" align='center'>
 		<div class="mostRecentText">Most Recent:</div>
 		<div class="mostRecentTitle">{{most_recent.title}}</div>
-		<div class="mostRecentContent">{{most_recent.text|safe|truncatechars:200|linebreaksbr}}<a href="{% url 'post_detail' pk=most_recent.pk %}"><span class="topPostMore">more>></span></a></div>
+		<div class="mostRecentContent">{{most_recent.text|safe|truncatechars:200|linebreaksbr}}<a href="{% url 'post_detail' pk=most_recent.pk %}"><span class="topPostMore">Read more>></span></a></div>
 		<div class="mostRecentDate">{{most_recent.published_date}}</div>
 	</div>
 	

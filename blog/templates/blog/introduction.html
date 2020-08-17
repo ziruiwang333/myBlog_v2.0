@@ -89,10 +89,10 @@
 			
 			<!-- -->
 			<div class="introPersonalStatement">
-				{% for myps in ps %}
 				<div class="personalStatement">Personal Statement</div>
-				<div class="statementDeatil">{{myps.ps_describe}}</div>
-				{% endfor %}
+					{% for myps in ps %}
+					<div class="statementDeatil">{{myps.ps_describe}}</div>
+					{% endfor %}
 			</div>
 		</div>
 		
