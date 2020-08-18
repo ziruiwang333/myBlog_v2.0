@@ -88,6 +88,7 @@ class Photos(models.Model):
     describe = models.CharField(max_length=500, blank=True)
     photo = models.ImageField(upload_to = 'images/')
     title = models.CharField(max_length=30)
+    compressed_photo = models.ImageField(upload_to = 'compressed_images/')
     
     def __str__(self):
         return str(self.album_name) + ': ' + self.title + '; ' + self.describe

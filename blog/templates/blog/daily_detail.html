@@ -9,7 +9,7 @@
 	<div class="blank">
 		{% for photo1 in photos %}
 			<div class ="dailyPhotoLoop">
-				<div class="dailyPhoto" ><a href="{% url 'photo' pk=photo1.pk %}"><img id="myImg" src="{{photo1.photo.url}}" title={{photo1.title}}/></a></div>
+				<div class="dailyPhoto" ><a href="{% url 'photo' pk=photo1.pk %}"><img id="myImg" src="{{photo1.compressed_photo.url}}" title={{photo1.title}}/></a></div>
 			</div>
 		{%endfor%}
 	</div>
