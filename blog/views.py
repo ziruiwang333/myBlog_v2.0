@@ -37,7 +37,7 @@ def photo(request, pk):
     return render(request, 'blog/photo.html', {'photoPK':photoPK})
 
 def posts(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
     return render(request, 'blog/posts.html', {'posts':posts})
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
