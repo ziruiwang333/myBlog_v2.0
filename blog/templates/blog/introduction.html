@@ -14,7 +14,7 @@
 			</div>
 			
 			<div class="introPhoto">
-				<img src="{% static 'images/avt.png' %}"/>
+				<img src="{% static 'images/myphoto.jpg' %}"/>
 			</div>
 			
 			<div class="leftBarTitle">
@@ -38,6 +38,16 @@
 				<p>{{detail.address}},</p>
 				<p>{{detail.city}},</p>
 				<p>{{detail.country}}</p>
+			</div>
+			
+			<div class="icons">
+				<span class="githubIcon">
+					<a href="https://github.com/ziruiwang333/myBlog_v2.0/" target="_blank"><img src="{% static 'images/githubIcon.png' %}"/></a>
+				</span>
+				
+				<span class="facebookIcon">
+					<a href="https://www.facebook.com/zirui.wang.79827/" target="_blank"><img src="{% static 'images/facebookIcon.png' %}"/></a>
+				</span>
 			</div>
 			{% endfor %}
 		</div>

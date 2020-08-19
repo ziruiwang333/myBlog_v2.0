@@ -278,3 +278,19 @@ a:visited{
 	font-family: Pangolin-Regular;
 	cursor: pointer;
 }
+
+.icons{
+	margin-top: 40px;
+}
+
+.githubIcon img{
+	width: 30px;
+	display: inline-block;
+	margin-right: 10px;
+
+}
+
+.facebookIcon img{
+	width: 30px;
+	display: inline-block;
+}
